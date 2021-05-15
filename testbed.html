@@ -1,0 +1,70 @@
+<script>
+  // console.log(i);
+  // var i = 5;
+  var a = 5;
+  var b = 5;
+  let c = 5;
+  let d = 5;
+
+  var a = 10; //can be reassigned
+  // let b = 10; // throws SyntaxError
+  // var c = 10; // throws SyntaxError
+  // let d = 10; // throws SyntaxError
+
+  console.log('a is : ' + a); // reassigned same block a is :10
+  console.log('b throws syntax error'); 
+  console.log('c throws syntax error'); 
+  console.log('d throws syntax error'); 
+  console.log('');
+
+
+  {
+    console.log('{')
+    var a = 15;
+    let b = 15; 
+    // var c = 15; // throws syntax error
+    let d = 15; 
+
+    console.log('  a is : ' + a);    
+    console.log('  b is : ' + b);   
+    console.log('  c throws syntax error'); 
+    console.log('  d is : ' + d);    
+    console.log('}')
+  }
+
+  console.log('');
+
+  console.log('a is : ' + a );
+  console.log('b is : ' + b );
+  console.log('c has thrown syntax errors so it is still : ' + c);
+  console.log('d is : ' + d );
+  
+  console.log('');
+
+  function scopey(){
+    console.log('scopey(){')
+
+    var a = 20;
+    let b = 20;
+    var c = 20;
+    let d = 20;
+
+    console.log('a is : ' + a );
+    console.log('b is : ' + b );
+    console.log('c is : ' + c );
+    console.log('d is : ' + d );
+
+
+    console.log('}')
+  }
+  scopey();
+
+  console.log('');
+
+
+  console.log('a is : ' + a);
+  console.log('b is : ' + b);
+  console.log('c is : ' + c);
+  console.log('d is : ' + d);
+
+</script>

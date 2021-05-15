@@ -1,0 +1,45 @@
+<script>
+
+  var a = 5;
+  let b = 5;
+
+  console.log('');
+
+  {
+    console.log('{')
+    
+    a = 15;
+    b = 15; 
+
+    console.log('  a is : ' + a);    
+    console.log('  b is : ' + b);   
+
+    console.log('}')
+  }
+
+  console.log('');
+
+  console.log('a is : ' + a );
+  console.log('b is : ' + b );
+  
+  console.log('');
+
+  function scopey(){
+    console.log('scopey(){')
+
+    a = 20;
+    b = 20;
+
+    console.log('a is : ' + a );
+    console.log('b is : ' + b );
+
+    console.log('}')
+  }
+  scopey();
+
+  console.log('');
+
+  console.log('a is : ' + a);
+  console.log('b is : ' + b);
+
+</script>
